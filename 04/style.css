@@ -53,6 +53,16 @@ ul.menu li.menu-item ul.sub-menu li ul.sub-menu {
    display: none;
 }
 
+ul.menu li.menu-item ul.sub-menu {
+   padding: 0;
+}
+
+ul.menu li.menu-item ul.sub-menu li a {
+   width: 200px;
+   border: 1px solid lime;
+
+}
+
 ul.menu li.menu-item:hover ul.sub-menu {
    display: block;
 }
@@ -61,12 +71,60 @@ ul.menu li.menu-item ul.sub-menu li:hover ul.sub-menu {
    display: block;
 }
 
-ul.menu li.menu-item ul.sub-menu li ul.sub-menu li {}
+/* ul.menu li.menu-item ul.sub-menu li ul.sub-menu li {} */
+ul.menu li.menu-item,
+ul.menu li.menu-item ul.sub-menu li.sub-menu-item {
+   position: relative;
+}
+
+ul.menu li.menu-item ul.sub-menu,
+ul.menu li.menu-item ul.sub-menu li.sub-menu-item ul.sub-menu {
+   position: absolute;
+}
+
+ul.menu li.menu-item ul.sub-menu li.sub-menu-item ul.sub-menu {
+   left: 260px;
+   top: 00px;
+}
 
 ul.sub-menu li.sub-menu-item {
    float: none;
+   background-color: rgb(26, 26, 26);
+}
+
+ul.sub-menu li.sub-menu-item a {
+   color: #f1f1f1;
+}
+
+ul.sub-menu li.sub-menu-item a:hover {
+   color: #fff;
+}
+
+ul.sub-menu li.sub-menu-item ul.sub-menu {
+   float: right;
 }
 
 ul.sub-menu li.sub-menu-item a {
    padding: 12px 40px 12px 20px;
+}
+
+/* ul.sub-menu li.sub-menu-item,
+ul.sub-menu li.menu-item {
+   position: relative;
+   overflow: hidden;
+}
+
+ul.sub-menu li.sub-menu-item:hover::after,
+ul.menu li.menu-item:not(:only-child):hover::after {
+   content: ">";
+   position: absolute;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   width: 30px;
+   background-color: pink;
+} */
+
+ul.menu li.menu-item a:not(:only-child) {
+   background-color: red;
 }
