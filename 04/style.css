@@ -16,7 +16,6 @@ ul.menu li {
    list-style: none;
    float: left;
    position: relative;
-   border: 1px solid red;
 }
 
 ul.menu li a {
@@ -59,17 +58,19 @@ ul.menu li.menu-item ul.sub-menu {
 
 ul.menu li.menu-item ul.sub-menu li a {
    width: 200px;
-   border: 1px solid lime;
-
 }
 
 ul.menu li.menu-item:hover ul.sub-menu {
    display: block;
 }
 
-ul.menu li.menu-item ul.sub-menu li:hover ul.sub-menu {
+ul.menu li.menu-item ul.sub-menu li.sub-menu-item:hover ul.sub-menu {
    display: block;
 }
+
+/* ul.menu li.menu-item ul.sub-menu li.sub-menu-item a:hover ul.sub-menu {
+   display: block;
+} */
 
 /* ul.menu li.menu-item ul.sub-menu li ul.sub-menu li {} */
 ul.menu li.menu-item,
@@ -84,7 +85,7 @@ ul.menu li.menu-item ul.sub-menu li.sub-menu-item ul.sub-menu {
 
 ul.menu li.menu-item ul.sub-menu li.sub-menu-item ul.sub-menu {
    left: 260px;
-   top: 00px;
+   top: 0px;
 }
 
 ul.sub-menu li.sub-menu-item {
@@ -94,6 +95,7 @@ ul.sub-menu li.sub-menu-item {
 
 ul.sub-menu li.sub-menu-item a {
    color: #f1f1f1;
+   text-transform: capitalize;
 }
 
 ul.sub-menu li.sub-menu-item a:hover {
@@ -108,23 +110,19 @@ ul.sub-menu li.sub-menu-item a {
    padding: 12px 40px 12px 20px;
 }
 
-/* ul.sub-menu li.sub-menu-item,
+ul.sub-menu li.sub-menu-item,
 ul.sub-menu li.menu-item {
    position: relative;
-   overflow: hidden;
 }
 
-ul.sub-menu li.sub-menu-item:hover::after,
-ul.menu li.menu-item:not(:only-child):hover::after {
+ul.sub-menu li.sub-menu-item a:not(:only-child):hover::after,
+ul.menu li.menu-item a:not(:only-child):hover::after {
    content: ">";
+   font-size: 18px;
    position: absolute;
-   right: 0;
-   top: 0;
-   bottom: 0;
-   width: 30px;
-   background-color: pink;
-} */
-
-ul.menu li.menu-item a:not(:only-child) {
-   background-color: red;
+   right: 2px;
+   margin: auto;
+   width: 12px;
+   text-align: center;
+   transform: rotate(90deg);
 }
