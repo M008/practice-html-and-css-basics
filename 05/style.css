@@ -54,6 +54,15 @@ table {
 }
 
 /* reset END */
+/* BEM- 
+         1st - block: header, element:logo, menu
+         2nd - block: two-columns, element:column*2
+         3rd - block: three-columns, element:column*3 
+         4th - block: footer, element: "copyrights-center"
+
+         mix:
+         -and element that repeats itself: .full-width, .container, .orange-bg, (column??) */
+
 
 .full-width {
    border: solid 2px green;
