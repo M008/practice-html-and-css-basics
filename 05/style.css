@@ -57,17 +57,18 @@ table {
 
 .full-width {
    border: solid 2px green;
-   margin: 20px 0;
+   margin: 10px 0;
 }
 
 .container {
-   margin: 0 auto;
+   margin: 5px auto;
    max-width: 1000px;
    border: 2px solid blue;
    display: flex;
+   padding: 3px 0;
 }
 
-.container--space-between {
+.header.container {
    justify-content: space-between;
 }
 
@@ -75,15 +76,48 @@ table {
    background-color: orange;
 }
 
-.header_logo,
-.header_menu {
+.header__logo,
+.header__menu {
    height: 30px;
 }
 
-.header_logo {
+.header__logo {
    width: 120px;
 }
 
-.header_menu {
+.header__menu {
    width: 450px;
+}
+
+.two-columns.container {
+   justify-content: space-between;
+}
+
+.three-columns.container {
+   justify-content: space-around;
+}
+
+.two-columns__column,
+.three-columns__column {
+   height: 200px;
+   border: 1px solid black;
+}
+
+.two-columns__column {
+   width: 49%;
+}
+
+.three-columns__column {
+   width: 31%;
+}
+
+.footer.container {
+   justify-content: center;
+   align-items: center;
+   height: 100px;
+}
+
+.footer__copy-r {
+   height: 60px;
+   width: 100px;
 }
