@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="full-width">
+      <nav>
+         <div class="header container container--space-between">
+            <div class="header header_logo orange-bg"></div>
+            <menu class="header header_menu orange-bg"></menu>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <section class="full-width">
+         <div class="two-columns container">
+            <div class="two-columns two-columns_column"></div>
+            <div class="two-columns two-columns_column"></div>
+         </div>
+      </section>
+      <!-- section.full-width>.three-columns.container>.__column.orange-bg*3|bem -->
+      <!-- BEM- 
+         1st - block: header, element:logo, menu
+         2nd - block: two-columns, element:column*2
+         3rd - block: three-columns, element:column*3 
+         4th - block: footer, element: "copyrights-center"
+
+         mix:
+         -and element that repeats itself: .full-width, .container, .orange-bg, (column??)-->
+      <section class="full-width">
+         <div class="three-columns container">
+            <div class="three-columns three-columns_column orange-bg"></div>
+            <div class="three-columns three-columns_column orange-bg"></div>
+            <div class="three-columns three-columns_column orange-bg"></div>
+         </div>
+      </section>
+
+
+   </main>
+
+
+</body>
+
+</html>
